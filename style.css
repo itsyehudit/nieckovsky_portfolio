@@ -1,5 +1,9 @@
 body {
-background-color: #232323
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  width: 100%;
+  background-color: #111415;
 }
 
 header {
