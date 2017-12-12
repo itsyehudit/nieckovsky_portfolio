@@ -22,3 +22,15 @@ nav {
   text-overflow: ellipsis;
   align-items: center;
 }
+
+li {
+  display: inline;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: inherit;
+}
