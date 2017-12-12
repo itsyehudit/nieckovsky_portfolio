@@ -3,7 +3,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
   width: 100%;
+  background: url(nieckovsky_image_main.jpg);
   background-color: #111415;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 header {
