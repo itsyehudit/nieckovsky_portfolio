@@ -34,3 +34,13 @@ a {
   font-weight: 300;
   color: inherit;
 }
+
+footer {
+  color: rgba(255, 255, 255, 0.15);
+  width: 90%;
+  margin: 8vh auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
