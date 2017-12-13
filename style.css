@@ -11,25 +11,51 @@ body {
   background-repeat: no-repeat;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-column-gap: 2em;
-  width: 90%;
-  margin: 8vh auto 8vh auto;
+@media screen and (max-width: 680px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 90%;
+    margin: auto;
+  }
+
+  .nieckovsky_logo_top {
+    grid-column: 1/4;
+    grid-row:1/2;
+    display: inline;
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    margin: auto;
+  }
+  nav {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    align-self: center;
+  }
 }
 
-.nieckovsky_logo_top {
-  display: inline;
-  width: 100%;
-  height: auto;
-}
+@media screen and (min-width: 681px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 2em;
+    width: 90%;
+    margin: 8vh auto 8vh auto;
+  }
 
-nav {
-  display: grid;
-  justify-content: flex-end;
-  text-overflow: ellipsis;
-  align-items: center;
+  .nieckovsky_logo_top {
+    display: inline;
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    display: grid;
+    justify-content: flex-end;
+    text-overflow: ellipsis;
+    align-items: center;
+  }
 }
 
 li {
