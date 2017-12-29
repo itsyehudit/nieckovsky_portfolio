@@ -1,3 +1,68 @@
 body {
-background-color: #232323
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  background: url(nieckovsky_image_main.jpg);
+  background-color: #111415;
+  background-size: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin: auto 0;
+  height: 50px;
+}
+
+nav {
+  height: inherit;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2vh 0;
+  background-color: #111415;
+}
+
+img {
+  width: 125px;
+  height: 50px;
+  position: absolute;
+  margin-left: 5%;
+}
+
+ul {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: middle;
+  padding: 0px;
+  margin-left: 55%;
+}
+
+li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: inherit;
+  padding: 0 30px;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.15);
+  height: 9vh;
+  line-height: 9vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #111415;
 }
