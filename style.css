@@ -4,6 +4,10 @@ body {
   font-size: 15px;
   margin: 0px;
   padding: 0px;
+  background-color: #111415;
+}
+
+#main {
   background: url(nieckovsky_image_main.jpg);
   background-color: #111415;
   background-size: 100%;
