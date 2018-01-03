@@ -29,6 +29,7 @@ nav {
   right: 0;
   padding: 2vh 0;
   background-color: #111415;
+  z-index: 5;
 }
 
 nav img {
@@ -141,4 +142,5 @@ footer {
   right: 0;
   text-align: center;
   background-color: #111415;
+  z-index: 5;
 }
