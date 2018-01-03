@@ -27,14 +27,14 @@ nav {
   background-color: #111415;
 }
 
-img {
+nav img {
   width: 125px;
   height: 50px;
   position: absolute;
   margin-left: 5%;
 }
 
-ul {
+nav ul {
   display: inline-block;
   list-style-type: none;
   vertical-align: middle;
@@ -42,12 +42,12 @@ ul {
   margin-left: 55%;
 }
 
-li {
+nav ul li {
   display: inline-block;
   padding: 5px 20px;
 }
 
-a {
+nav ul a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
