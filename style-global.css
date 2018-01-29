@@ -1,0 +1,205 @@
+body {
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #111415;
+  overflow-x: hidden;
+}
+
+/*****************************WRAPPER*****************************/
+
+.content-main-wrapper {
+  display: flex;
+  height: 80vh;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.content-main-wrapper > * {
+  align-self: center;
+  padding: 0px;
+}
+
+/*****************************NAVIGATION*****************************/
+
+.header {
+  margin: auto 0;
+  height: auto;
+}
+
+.navigation-bar {
+  height: inherit;
+  padding: 2vh 0;
+  background-color: #111415;
+}
+
+.logo-main__image {
+  width: 125px;
+  height: 50px;
+  margin-left: 5%;
+}
+
+.navigation-bar-menu {
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: middle;
+  padding: 0px;
+  float: right;
+}
+
+.navigation-bar-menu__item {
+  display: inline-block;
+  padding: 5px 20px;
+}
+
+.navigation-bar-menu__item-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: inherit;
+  padding: 0 30px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom ease-out 1s;
+}
+
+.navigation-bar-menu__item-link:hover {
+  border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width : 865px) {
+  .navigation-bar-menu {
+    display: none;
+  }
+}
+
+/*****************************HAMBURGER*****************************/
+
+@media only screen and (max-width : 865px) {
+  .button-hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    opacity: .4;
+    border-top: 5px solid white;
+    background: transparent;
+    position: absolute;
+    right: 10vw;
+    top: 4.5vh;
+    transition: .25s opacity ease-out, .25s transform ease-out;
+  }
+
+  .button-hamburger::before, .button-hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid white;
+    transform: translateY(-20px);
+  }
+
+  .button-hamburger::after {
+    transform: translateY(10px);
+    transition: .25s transform ease-out;
+  }
+
+  .button-hamburger::before {
+    transition: .1s opacity ease-in-out;
+  }
+
+  .button-hamburger:hover {
+    opacity: .7;
+  }
+
+  .button-hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    outline: 0;
+  }
+
+  .button-hamburger:focus::after {
+    transform: rotate(-90deg) translateX(4px);
+  }
+
+  .button-hamburger:focus::before {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width : 865px) {
+
+.button-hamburger, .button-hamburger::after, .button-hamburger::before {
+  display: none;
+  }
+}
+
+/*****************************SIDEMENU*****************************/
+
+.side-navigation {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  height: 76vh;
+  top: 12vh;
+  right: -200px;
+  padding: 0;
+  background: #000;
+  border-radius: 20px;
+  box-shadow: 20px 12px 120px 10px rgba(255, 255, 255, 0.02);
+  transition: 0.3s transform ease-out;
+  opacity: 0.8;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.side-navigation-menu {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+  flex-direction: column;
+  margin: 0 5px;
+  padding: 30px;
+  list-style-type: none;
+}
+
+.side-navigation-menu__item {
+  display: flex;
+  height: 25px;
+  justify-content: space-around;
+  vertical-align: middle;
+  background: #000;
+  margin: 5px 0;
+}
+
+.side-navigation-menu__item-link {
+  display: flex;
+  opacity: 1;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  background: #000;
+  color: inherit;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.button-hamburger:focus ~ .side-navigation, .side-navigation:hover {
+  transform: translateX(-250px);
+}
+
+/*****************************FOOTER*****************************/
+
+.footer {
+  color: rgba(255, 255, 255, 0.15);
+  height: 9vh;
+  line-height: 9vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #111415;
+}

@@ -1,0 +1,37 @@
+/*****************************GALLERY*****************************/
+
+.gallery-container {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery__element {
+  width: 15vw;
+  height: 15vw;
+  margin: 2vw;
+}
+
+.gallery__element-link-image {
+  max-width: 100%;
+  max-height: 100%;
+  transition: opacity ease-out .5s;
+}
+
+.gallery__element-link-image:hover {
+  opacity: .3;
+}
+
+@media only screen and (max-width : 700px) {
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .gallery__element {
+    height: 20vw;
+    width: 20vw;
+    margin-top: 6px;
+  }
+}

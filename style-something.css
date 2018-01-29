@@ -1,0 +1,10 @@
+/*****************************SMTH*****************************/
+
+.something__content {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 4vh;
+  color: rgba(255, 255, 255, 0.15);
+}
