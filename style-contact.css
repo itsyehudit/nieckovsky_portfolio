@@ -1,13 +1,13 @@
 /*****************************CONTACT*****************************/
 
-.contact__content {
+.contact .contact__content {
   line-height: 4vh;
   text-align: center;
   font-size: 18px;
   font-weight: 300;
 }
 
-.contact__content-mail {
+.contact .contact__content-mail {
   text-decoration: none;
   color: inherit;
 }
