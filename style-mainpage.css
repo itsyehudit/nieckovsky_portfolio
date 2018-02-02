@@ -1,0 +1,45 @@
+/*****************************MAINPAGE*****************************/
+
+.img-main {
+  display: flex;
+  height: 80vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.img-main__image {
+  width: 100vw;
+  height: auto;
+  align-self: center;
+  padding: 0px;
+}
+
+@media only screen and (max-width : 1400px) {
+.img-main {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .img-main__image {
+    width: 1400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0)
+  }
+}
+
+@media only screen and (max-width : 700px) {
+  .img-main {
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .img-main__image {
+    width: 200vw;
+    height: auto;
+    align-self: center;
+    padding: 0px;
+  }
+}

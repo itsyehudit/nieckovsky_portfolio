@@ -10,14 +10,14 @@ body {
 
 /*****************************WRAPPER*****************************/
 
-.content-main-wrapper {
+.content-global-wrapper {
   display: flex;
   height: 80vh;
   justify-content: space-around;
   overflow: hidden;
 }
 
-.content-main-wrapper > * {
+.content-global-wrapper > * {
   align-self: center;
   padding: 0px;
 }
@@ -49,12 +49,12 @@ body {
   float: right;
 }
 
-.navigation-bar-menu__item {
+.navigation-bar-menu .navigation-bar-menu__item {
   display: inline-block;
   padding: 5px 20px;
 }
 
-.navigation-bar-menu__item-link {
+.navigation-bar-menu .navigation-bar-menu__item-link {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
@@ -64,7 +64,7 @@ body {
   transition: border-bottom ease-out 1s;
 }
 
-.navigation-bar-menu__item-link:hover {
+.navigation-bar-menu .navigation-bar-menu__item-link:hover {
   border-bottom: 1px solid white;
 }
 
@@ -163,7 +163,7 @@ body {
   list-style-type: none;
 }
 
-.side-navigation-menu__item {
+.side-navigation-menu .side-navigation-menu__item {
   display: flex;
   height: 25px;
   justify-content: space-around;
@@ -172,7 +172,7 @@ body {
   margin: 5px 0;
 }
 
-.side-navigation-menu__item-link {
+.side-navigation-menu .side-navigation-menu__item-link {
   display: flex;
   opacity: 1;
   padding: 10px;
@@ -190,161 +190,7 @@ body {
   transform: translateX(-250px);
 }
 
-/*****************************MAINPAGE*****************************/
-
-.img-main-wrapper {
-  display: flex;
-  height: 80vh;
-  text-align: center;
-  overflow: hidden;
-}
-
-.img-main-wrapper__image {
-  width: 100vw;
-  height: auto;
-  align-self: center;
-  padding: 0px;
-}
-
-@media only screen and (max-width : 1400px) {
-.img-main-wrapper {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .img-main-wrapper__image {
-    width: 1400px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0)
-  }
-}
-
-@media only screen and (max-width : 700px) {
-  .img-main-wrapper {
-    display: flex;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .img-main-wrapper__image {
-    width: 200vw;
-    height: auto;
-    align-self: center;
-    padding: 0px;
-  }
-}
-
-/*****************************GALLERY*****************************/
-
-.gallery-container {
-  clear: both;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery__element {
-  width: 15vw;
-  height: 15vw;
-  margin: 2vw;
-}
-
-.gallery__element-link-image {
-  max-width: 100%;
-  max-height: 100%;
-  transition: opacity ease-out .5s;
-}
-
-.gallery__element-link-image:hover {
-  opacity: .3;
-}
-
-@media only screen and (max-width : 700px) {
-  .gallery-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .gallery__element {
-    height: 20vw;
-    width: 20vw;
-    margin-top: 6px;
-  }
-}
-
-/*****************************ABOUT*****************************/
-
-.about-container {
-  width: 80vw;
-  display: flex;
-}
-
-.about__image {
-  margin: auto 1vw auto 7vw;
-  padding: 2vh;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.about__content {
-  margin: auto 7vw auto 1vw;
-  width: 40vw;
-  padding: 2vh;
-  display: inline-block;
-  vertical-align: middle;
-  line-height: 3vh;
-  font-weight: 300;
-}
-
-.about__image--850 {
-  display: none;
-}
-
-@media only screen and (max-width : 850px) {
-  .about__content {
-    width: 100%;
-    margin: auto;
-  }
-
-  .about__image--850 {
-    display: inline;
-    width: 23vw;
-    margin: auto 10px;
-    float: left;
-  }
-
-  .about__image {
-    display: none;
-  }
-}
-
-
-/*****************************CONTACT*****************************/
-
-.contact__content {
-  line-height: 4vh;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.contact__content-mail {
-  text-decoration: none;
-  color: inherit;
-}
-
-/*****************************SMTH*****************************/
-
-.something__content {
-  text-align: center;
-  font-style: italic;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 4vh;
-  color: rgba(255, 255, 255, 0.15);
-}
+/*****************************FOOTER*****************************/
 
 .footer {
   color: rgba(255, 255, 255, 0.15);
